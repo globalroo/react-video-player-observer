@@ -1,7 +1,6 @@
 {
 	"name": "react-video-player-observer",
 	"version": "0.0.1",
-	"private": false,
 	"license": "MIT",
 	"dependencies": {
 		"autoprefixer": "7.1.2",
@@ -98,6 +97,7 @@
 		]
 	},
 	"devDependencies": {
+		"babel-preset-stage-2": "6.24.1",
 		"codecov": "2.3.0",
 		"react-test-renderer": "^15.6.1"
 	}
