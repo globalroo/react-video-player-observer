@@ -1,6 +1,6 @@
 # video-player-observer [![Build Status](https://travis-ci.org/globalroo/video-player-observer.svg?branch=master)](https://travis-ci.org/globalroo/video-player-observer)[![Dependency Status](https://dependencyci.com/github/globalroo/video-player-observer/badge)](https://dependencyci.com/github/globalroo/video-player-observer)[![codecov](https://codecov.io/gh/globalroo/video-player-observer/branch/master/graph/badge.svg)](https://codecov.io/gh/globalroo/video-player-observer)
 
-> Video Player Observer
+> React Video Player Observer
 
 ```sh
 npm install yarn -g
