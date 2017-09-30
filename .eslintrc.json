@@ -1,0 +1,59 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module"
+	},
+	"globals": {
+		"document": false,
+		"require": false,
+		"describe": false,
+		"test": false,
+		"expect": false,
+		"module": false,
+		"__dirname": false,
+		"process": false,
+		"beforeEach": false,
+		"afterEach": false,
+		"it": false,
+		"jest": false
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"react-app"
+	],
+	"plugins": [
+		"react"
+	],
+    "rules": {
+		"arrow-parens": "error",
+		"arrow-spacing": "error",
+		"indent": ["error", "tab"],
+		"camelcase": 2,
+		"object-literal-sort-keys": 0,
+		"quotes": [
+			"error",
+			"double"
+		],
+		"semi": ["error", "always"],
+		"no-constant-condition": 2,
+		"no-control-regex": 2,
+		"no-duplicate-case": 2,
+		"no-empty-character-class": 2,
+		"no-ex-assign": 2,
+		"no-extra-boolean-cast": 2,
+		"no-extra-semi": 2,
+		"no-irregular-whitespace": 2,
+		"no-sparse-arrays": 2,
+		"no-unexpected-multiline": 2,
+		"valid-typeof": 2,
+		"no-multi-spaces": 2,
+		"brace-style": [
+			2,
+			"1tbs"
+		],
+		"no-unused-vars": "error",
+		"prefer-arrow-callback": "error",
+		"react/display-name": 0
+	}
+}

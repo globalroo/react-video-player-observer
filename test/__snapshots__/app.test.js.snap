@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Application tests Application is rendered as expected 1`] = `
+<div
+  className="App container"
+>
+  <div
+    className="App-header col-xs-12"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h4>
+       Player Observer Test Harness 
+    </h4>
+  </div>
+  <div
+    className="player-observer-container"
+  >
+    <div
+      className="col-xs-12 col-sm-6"
+    >
+      <div>
+         Player Mock 
+      </div>
+      <div>
+         Controls Mock 
+      </div>
+    </div>
+    <div
+      className="col-xs-12 col-sm-6"
+    >
+      <div>
+         Stats Mock 
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Event history works as intended Add event history adds a new event to the front of the list and pops one off the end of the list 1`] = `
+Array [
+  Object {
+    "event": "test",
+    "timeStamp": "15:00:00.000",
+  },
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+  Array [
+    Object {
+      "event": "test",
+      "timeStamp": "14:59:00.000",
+    },
+  ],
+]
+`;

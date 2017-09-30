@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getObservableProperties returns expected structure getObservablePlayerProperties 1`] = `
+Object {
+  "buffered": 0,
+  "currentSrc": "test",
+  "currentTime": 10,
+  "duration": 100,
+  "error": Object {
+    "code": 0,
+    "description": "OK",
+  },
+  "nativeEvent": "test",
+  "paused": false,
+  "remainingTime": 90,
+  "seekeable": null,
+  "seeking": false,
+  "src": "test",
+}
+`;
+
+exports[`getObservableProperties returns expected structure getObservablePlayerProperties with bad values 1`] = `
+Object {
+  "buffered": 0,
+  "currentSrc": "test",
+  "currentTime": undefined,
+  "duration": undefined,
+  "error": Object {
+    "code": 0,
+    "description": "OK",
+  },
+  "nativeEvent": "test",
+  "paused": false,
+  "remainingTime": 0,
+  "seekeable": null,
+  "seeking": false,
+  "src": "test",
+}
+`;

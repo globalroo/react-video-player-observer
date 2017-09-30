@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Stats Panel tests Controls panel renders as expected when asset completed 1`] = `
+<div
+  className="panel panel-default"
+>
+  <div
+    className="panel-heading"
+  >
+    <h4>
+      Observer
+    </h4>
+  </div>
+  <div
+    className="panel-body"
+  >
+    <table
+      className="table table-striped table-responsive"
+    >
+      <tbody>
+        <tr>
+          <td
+            className="halfColumn"
+          >
+            currentTime
+          </td>
+          <td
+            className="halfColumn"
+          >
+            100.000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            remainingTime
+          </td>
+          <td>
+            0
+          </td>
+        </tr>
+        <tr>
+          <td>
+            error?
+          </td>
+          <td
+            className="info"
+          >
+            OK
+             [
+            0
+            ]
+          </td>
+        </tr>
+        <tr
+          className="success latestEvent"
+        >
+          <td>
+            test
+          </td>
+          <td>
+            now
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Stats Panel tests Controls panel renders as expected when error state and player at non zero position 1`] = `
+<div
+  className="panel panel-default"
+>
+  <div
+    className="panel-heading"
+  >
+    <h4>
+      Observer
+    </h4>
+  </div>
+  <div
+    className="panel-body"
+  >
+    <table
+      className="table table-striped table-responsive"
+    >
+      <tbody>
+        <tr>
+          <td
+            className="halfColumn"
+          >
+            currentTime
+          </td>
+          <td
+            className="halfColumn"
+          >
+            49.500
+          </td>
+        </tr>
+        <tr>
+          <td>
+            remainingTime
+          </td>
+          <td>
+            49.500
+          </td>
+        </tr>
+        <tr>
+          <td>
+            error?
+          </td>
+          <td
+            className="danger"
+          >
+            Decoding error
+             [
+            3
+            ]
+          </td>
+        </tr>
+        <tr
+          className="success latestEvent"
+        >
+          <td>
+            error
+          </td>
+          <td>
+            now
+          </td>
+        </tr>
+        <tr
+          className=""
+        >
+          <td>
+            test
+          </td>
+          <td>
+            now
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Stats Panel tests Controls panel renders as expected when initialised 1`] = `
+<div
+  className="panel panel-default"
+>
+  <div
+    className="panel-heading"
+  >
+    <h4>
+      Observer
+    </h4>
+  </div>
+  <div
+    className="panel-body"
+  >
+    <table
+      className="table table-striped table-responsive"
+    >
+      <tbody>
+        <tr>
+          <td
+            className="halfColumn"
+          >
+            currentTime
+          </td>
+          <td
+            className="halfColumn"
+          >
+            0
+          </td>
+        </tr>
+        <tr>
+          <td>
+            remainingTime
+          </td>
+          <td>
+            100.000
+          </td>
+        </tr>
+        <tr>
+          <td>
+            error?
+          </td>
+          <td
+            className="info"
+          >
+            
+             [
+            0
+            ]
+          </td>
+        </tr>
+        <tr
+          className="success latestEvent"
+        >
+          <td>
+            test
+          </td>
+          <td>
+            now
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;

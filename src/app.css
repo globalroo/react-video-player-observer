@@ -1,0 +1,52 @@
+.App {
+	text-align: center;
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+	height: 60px;
+}
+
+.App-header {
+	background-color: #222;
+	padding: 10px;
+	color: white;
+}
+
+.App-intro {
+	font-size: medium;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.btn-group-max-width {
+	width: 100%;
+}
+
+.now-playing {
+	color: #00bc8c;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.player-observer-container {
+	background-color: #333333;
+	float: left;
+	padding: 10px;
+	padding-top: 20px;
+	border: 1.5px solid #00bc8c;
+	border-radius: 10px;
+	min-width: 100%;
+	box-shadow: 0px 0px 50px rgba(0,0,0,.6);
+}
+
+.panel {
+	box-shadow: 0px 0px 50px rgba(0,0,0,.6);
+}

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Player component tests Player component renders as expected 1`] = `
+<div
+  className="panel panel-default"
+>
+  <div
+    className="panel-heading"
+  >
+    <h4>
+      Video Player
+    </h4>
+  </div>
+  <div
+    className="panel-body"
+  >
+    <div>
+       Player component created and callback passed through to Player with value:
+      mockCallback
+    </div>
+  </div>
+</div>
+`;

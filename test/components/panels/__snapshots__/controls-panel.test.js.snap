@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Controls Panel tests Controls panel renders as expected 1`] = `
+<div
+  className="panel panel-default"
+>
+  <div
+    className="panel-heading"
+  >
+    <h4>
+      Controls
+    </h4>
+  </div>
+  <div
+    className="panel-body"
+  >
+    <div
+      aria-label="Switch movies"
+      className="btn-group btn-group-vertical btn-group-max-width"
+      role="group"
+    >
+      <div
+        className="btn-group"
+        role="group"
+      >
+        <button
+          className="btn btn-info"
+          onClick={[Function]}
+          type="button"
+        >
+          Sintel
+        </button>
+      </div>
+      <div
+        className="btn-group"
+        role="group"
+      >
+        <button
+          className="btn btn-info"
+          onClick={[Function]}
+          type="button"
+        >
+          Big Buck Bunny - Trailer
+        </button>
+      </div>
+      <div
+        className="btn-group"
+        role="group"
+      >
+        <button
+          className="btn btn-info"
+          onClick={[Function]}
+          type="button"
+        >
+          Big Buck Bunny - Movie
+        </button>
+      </div>
+    </div>
+  </div>
+  <div
+    className="panel-footer"
+  >
+    <small>
+      Now playing: 
+      <span
+        className="now-playing"
+      >
+        Sintel
+      </span>
+    </small>
+  </div>
+</div>
+`;
+
+exports[`Controls Panel tests MovieButton renders as expected 1`] = `
+<div
+  className="btn-group"
+  role="group"
+>
+  <button
+    className="btn btn-info"
+    onClick={[Function]}
+    type="button"
+  >
+    Sintel
+  </button>
+</div>
+`;
