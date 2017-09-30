@@ -104,7 +104,7 @@ export class PlayerApp extends Component {
 			<div className="App container">
 				<div className="App-header col-xs-12">
 					<img src={logo} className="App-logo" alt="logo" />
-					<h4> Player Observer Test Harness </h4>
+					<h4> React Player Observer Test Harness </h4>
 				</div>
 				<div className="player-observer-container">
 					<div className="col-xs-12 col-sm-6">
