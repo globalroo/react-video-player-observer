@@ -46,7 +46,7 @@
 		"start": "node scripts/start.js",
 		"build": "node scripts/build.js",
 		"test": "node scripts/test.js --env=jsdom",
-		"testcov": "node scripts/test.js --env=jsdom --coverage",
+		"testcov": "node scripts/test.js --env=jsdom --coverage && codecov",
 		"lint": "eslint . --fix",
 		"clean": "rimraf coverage && rimraf build",
 		"package": "yarn run clean && rimraf node_modules"
@@ -98,6 +98,7 @@
 		]
 	},
 	"devDependencies": {
+		"codecov": "2.3.0",
 		"react-test-renderer": "^15.6.1"
 	}
 }

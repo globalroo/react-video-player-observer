@@ -13,7 +13,7 @@ exports[`Application tests Application is rendered as expected 1`] = `
       src="logo.svg"
     />
     <h4>
-       Player Observer Test Harness 
+       React Player Observer Test Harness 
     </h4>
   </div>
   <div
