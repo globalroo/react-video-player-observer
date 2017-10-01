@@ -44,72 +44,72 @@ exports[`Event history works as intended Add event history adds a new event to t
 Array [
   Object {
     "event": "test",
-    "timeStamp": "15:00:00.000",
+    "timeStamp": "14:00:00.000",
   },
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
   Array [
     Object {
       "event": "test",
-      "timeStamp": "14:59:00.000",
+      "timeStamp": "13:59:00.000",
     },
   ],
 ]
