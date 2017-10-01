@@ -1,4 +1,4 @@
-# video-player-observer [![Build Status](https://travis-ci.org/globalroo/video-player-observer.svg?branch=master)](https://travis-ci.org/globalroo/video-player-observer)[![Dependency Status](https://dependencyci.com/github/globalroo/video-player-observer/badge)](https://dependencyci.com/github/globalroo/video-player-observer)[![codecov](https://codecov.io/gh/globalroo/video-player-observer/branch/master/graph/badge.svg)](https://codecov.io/gh/globalroo/video-player-observer)
+# react-video-player-observer [![Build Status](https://travis-ci.org/globalroo/react-video-player-observer.svg?branch=master)](https://travis-ci.org/globalroo/react-video-player-observer)[![Dependency Status](https://dependencyci.com/github/globalroo/react-video-player-observer/badge)](https://dependencyci.com/github/globalroo/react-video-player-observer)[![codecov](https://codecov.io/gh/globalroo/react-video-player-observer/branch/master/graph/badge.svg)](https://codecov.io/gh/globalroo/react-video-player-observer)
 
 > React Video Player Observer
 
