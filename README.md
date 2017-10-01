@@ -16,4 +16,5 @@ Example publish / subscribe, video player observer. The harness allows you to sw
 
 N.B. You can test stream fails by running the Bunny trailer in Chrome, provided you have just a vanilla install and no additional codecs.
 
-
+![Screenshot](/screenshot.png)
+Format: ![Alt Text](url)
