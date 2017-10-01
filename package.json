@@ -2,6 +2,7 @@
 	"name": "react-video-player-observer",
 	"version": "0.0.1",
 	"license": "MIT",
+	"homepage": "https://globalroo.github.io/react-video-player-observer/",
 	"dependencies": {
 		"autoprefixer": "7.1.2",
 		"babel-core": "6.25.0",
@@ -48,7 +49,9 @@
 		"testcov": "node scripts/test.js --env=jsdom --coverage && codecov",
 		"lint": "eslint . --fix",
 		"clean": "rimraf coverage && rimraf build",
-		"package": "yarn run clean && rimraf node_modules"
+		"package": "yarn run clean && rimraf node_modules",
+		"predeploy": "yarn run build",
+		"deploy": "gh-pages -d build"
 	},
 	"jest": {
 		"modulePaths": [
@@ -99,6 +102,7 @@
 	"devDependencies": {
 		"babel-preset-stage-2": "6.24.1",
 		"codecov": "2.3.0",
+		"gh-pages": "1.0.0",
 		"react-test-renderer": "^15.6.1"
 	}
 }
