@@ -5,7 +5,7 @@ export const mockDate = (epochTime) => {
 	const utcTime = epochTime + msOffset;
 	const constantDate = new Date(utcTime);
 
-	(global).Date = class extends Date {
+	global.Date = class extends Date {
 		constructor(timestamp) {
 			super();
 			if (timestamp) {

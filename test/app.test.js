@@ -2,7 +2,7 @@ import * as renderer from "react-test-renderer";
 import React from "react";
 import { PlayerApp, initialState } from "src/app";
 import { getAvailableMedia, HISTORICAL_EVENTS } from "src/configuration";
-import { mockDate, realDate } from "test/helpers/date-helper";
+import { mockDate } from "test/helpers/date-helper";
 
 const testData = getAvailableMedia();
 
@@ -30,11 +30,14 @@ jest.mock("src/player-observer/player-observer", () => ({
 			initialisePlayer: jest.fn(),
 			subscribe: jest.fn(),
 			unsubscribe: jest.fn()
-		}),
+		})
 	}
 }));
 
 describe("Application tests", () => {
+	beforeEach(() => {
+		mockDate(1506780000000); // Saturday, 30 September 2017 14:00:00
+	});
 	test("Application state is initialised as expected", () => {
 		const component = new PlayerApp({ availableMedia: testData });
 		expect(component.state).toBe(initialState);
@@ -42,10 +45,13 @@ describe("Application tests", () => {
 
 	test("Application state is updated by handleState (called from the observer) correctly", () => {
 		const component = new PlayerApp({ availableMedia: testData });
-		const newState = { "eventHistory": [{ "event": "test", "timeStamp": "14:00:00.000" }], "playerState": { "currentTime": 0 } };
-		component.setState = jest.fn();
 
-		mockDate(1506780000000); // Saturday, 30 September 2017 14:00:00
+		const newState = {
+			eventHistory: [{ event: "test", timeStamp: "14:00:00.000" }],
+			playerState: { currentTime: 0 }
+		};
+
+		component.setState = jest.fn();
 		component.handleState("test", { currentTime: 0 });
 		expect(component.setState).toBeCalledWith(newState);
 	});
@@ -74,26 +80,24 @@ describe("Application tests", () => {
 });
 
 describe("Event history works as intended", () => {
-	afterEach(() => {
-		(global).Date = realDate;
+	beforeEach(() => {
+		mockDate(1506780000000); // Saturday, 30 September 2017 14:00:00
 	});
 	test("Add event history adds a new event", () => {
 		const component = new PlayerApp({ availableMedia: testData });
-		const expectedResult = [{ "event": "test", "timeStamp": "14:00:00.000" }];
-		mockDate(1506780000000); // Saturday, 30 September 2017 14:00:00
+		const expectedResult = [{ event: "test", timeStamp: "14:00:00.000" }];
 		const newEventHistory = component.addEventToHistory("test", []);
 		expect(newEventHistory).toEqual(expectedResult);
 	});
 
 	test("Add event history adds a new event to the front of the list and pops one off the end of the list", () => {
 		const component = new PlayerApp({ availableMedia: testData });
-		const fakeEvent = [{ "event": "test", "timeStamp": "13:59:00.000" }];
+		const fakeEvent = [{ event: "test", timeStamp: "13:59:00.000" }];
 		const listSize = HISTORICAL_EVENTS;
 		const fakeEvents = [];
 		for (let i = 0; i < listSize; i++) {
 			fakeEvents.push(fakeEvent);
 		}
-		mockDate(1506780000000); // Saturday, 30 September 2017 14:00:00
 		const newEventHistory = component.addEventToHistory("test", fakeEvents);
 		expect(newEventHistory).toMatchSnapshot();
 		expect(newEventHistory[0].timeStamp).toBe("14:00:00.000");
