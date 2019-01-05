@@ -57,7 +57,13 @@
 	"scripts": {
 		"start": "node scripts/start.js",
 		"build": "node scripts/build.js",
-		"test": "node scripts/test.js"
+		"test": "node scripts/test.js",
+		"testcov": "node scripts/test.js --env=jsdom --coverage && codecov",
+		"lint": "eslint . --fix",
+		"clean": "rimraf coverage && rimraf build",
+		"package": "yarn run clean && rimraf node_modules",
+		"predeploy": "yarn run build",
+		"deploy": "gh-pages -d build"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -70,8 +76,11 @@
 	],
 	"jest": {
 		"collectCoverageFrom": [
-			"src/**/*.{js,jsx,ts,tsx}",
-			"!src/**/*.d.ts"
+			"src/**/*.{js,jsx}"
+		],
+		"coveragePathIgnorePatterns": [
+			"src/index",
+			"src/registerServiceWorker"
 		],
 		"resolver": "jest-pnp-resolver",
 		"setupFiles": [
@@ -114,6 +123,7 @@
 		]
 	},
 	"devDependencies": {
+		"codecov": "3.1.0",
 		"react-test-renderer": "16.7.0"
 	}
 }
